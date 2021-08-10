@@ -8,9 +8,9 @@
 /.bundle
 
 # Ignore docker files
-Dockerfile
-docker-compose.yml
-entrypoint.sh
+# Dockerfile
+# docker-compose.yml
+# entrypoint.sh
 
 # Ignore all logfiles and tempfiles.
 /log/*
