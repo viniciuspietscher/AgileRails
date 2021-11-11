@@ -10,7 +10,7 @@ RUN yarn set version berry
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
-RUN rails webpacker:insall
+RUN rails webpacker:install
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
