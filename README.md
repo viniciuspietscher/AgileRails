@@ -1,3 +1,9 @@
+Agile Web Development with Rails 5.1
+by Sam Ruby and David Bryant Copeland
+https://pragprog.com/titles/rails51/agile-web-development-with-rails-5-1/
+
+
+
 To get the app up and running in your machine execute the following commands
 
 clone from git build the container
