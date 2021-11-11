@@ -1,24 +1,31 @@
-# README
+To get the app up and running in your machine execute the following commands
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+clone from git build the container
 
-Things you may want to cover:
+```shell
+git clone https://github.com/viniciuspietscher/AgileRails.git
+```
 
-* Ruby version
+```shell
+cd AgileRails
+```
 
-* System dependencies
+```shell
+docker compose build
+```
 
-* Configuration
+```shell
+docker compose run --rm web rails db:create db:migrate db:seed
+```
 
-* Database creation
+```shell
+docker compose run --rm web rails webpacker:install
+```
 
-* Database initialization
+Run with
+```shell
+docker compose up
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Access the application at
+http://localhost:3000
